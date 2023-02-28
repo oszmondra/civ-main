@@ -7,26 +7,10 @@
 
 <script>
 import Navbar from '../src/components/Navbar/index.vue';
-import Search from '../src/components/countries/Search.vue'
-import SearchResults from '../src/components/countries/SearchResults.vue'
 
 export default {
   components: {
-    Navbar,
-    Search,
-    SearchResults
+    Navbar
   },
-  data() {
-    return {
-      searched: false,
-      countries: []
-    }
-  },
-  methods: {
-    showResults(countries) {
-      this.searched = true
-      this.countries = countries
-    }
-  }
 }
 </script>
